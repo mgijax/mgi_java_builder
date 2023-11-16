@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>org.jax</groupId>
+	<artifactId>mgi</artifactId>
+	<packaging>pom</packaging>
+	<version>${revision}</version>
+
+	<name>MGI Java</name>
+
+	<modules>
+		<module>../lib_java_fe</module>
+		<module>../snpindexer</module>
+		<module>../snpdatamodel</module>
+		<module>../fedatamodel</module>
+		<module>../feindexer</module>
+		<module>../gxdindexer</module>
+		<module>../fewi</module>
+	</modules>
+
+	<properties>
+		<revision>0.0.1</revision>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.jax.mgi</groupId>
+				<artifactId>lib_java_fe</artifactId>
+				<version>${revision}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jax.mgi</groupId>
+				<artifactId>snpindexer</artifactId>
+				<version>${revision}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jax.mgi</groupId>
+				<artifactId>snpdatamodel</artifactId>
+				<version>${revision}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jax.mgi</groupId>
+				<artifactId>fedatamodel</artifactId>
+				<version>${revision}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jax.mgi</groupId>
+				<artifactId>feindexer</artifactId>
+				<version>${revision}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jax.mgi</groupId>
+				<artifactId>gxdindexer</artifactId>
+				<version>${revision}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jax.mgi</groupId>
+				<artifactId>fewi</artifactId>
+				<version>${revision}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+</project>
